@@ -15,7 +15,7 @@ various regression algorithms.
 
 * ANN
 * SVM
+* Gradient Boosting
 
 ### Planned
 
-* Gradient Boosting
