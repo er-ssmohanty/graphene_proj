@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-grd = pd.read_csv("data/graphene_data_final.csv")
+grd = pd.read_csv("../data/graphene_data_final.csv")
 #Graphene_percentage  FEED   RPM   DOC  MRR_gm_per_sec     Ra
 
 ###################TO DO###############################################################
@@ -22,9 +22,9 @@ for i in grd["FEED"].unique():
 	for j in grd["RPM"].unique():
 		for k in grd["DOC"].unique():
 			grd2 =  grd[(grd["FEED"] == i) & (grd['RPM'] == j) & (grd['DOC'] == k)]
+			plt.subplot(7,4,count_)
 			plt.plot(grd2['Graphene_percentage'],grd2['MRR_gm_per_sec'])
 			plt.title(str(i)+' '+str(j)+' '+str(k))
-			plt.subplot(7,4,count_)
 			count_=count_+1
 
 #plt.ylabel('Ra')
