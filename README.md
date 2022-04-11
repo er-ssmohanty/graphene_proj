@@ -10,12 +10,8 @@ various regression algorithms.
 * Linear Regression
 * Lasso Regression
 * Ridge Regression
-
-### Ongoing
-
 * ANN
 * SVM
 * Gradient Boosting
 
-### Planned
 
